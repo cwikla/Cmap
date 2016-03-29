@@ -1,0 +1,10 @@
+SYS_LIBRARIES= -lXm -lXt -lXmu -lX11 -lm
+
+CFLAGS=  -DMOTIF -g
+SRCS= CmapT.c Cmap.c
+OBJS= CmapT.o Cmap.o
+PROGRAM= CmapT 
+
+ComplexProgramTarget(CmapT)
+
+depend:: CmapP.h Cmap.h 
